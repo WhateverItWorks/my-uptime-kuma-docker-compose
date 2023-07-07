@@ -54,8 +54,15 @@ It is a temporary live demo, all data will be deleted after 10 minutes. Use the 
 
 ## How to Install
 
-### Deploy with Docker
+## Deploy with Docker
+### €⁠20 on [Hetzner Cloud](https://hetzner.cloud/?ref=eLtKhFK70n4h)
 
+### Automatic Installs
+```
+https://github.com/WhateverItWorks/Watchtower
+```
+
+Run Uptime Kuma in production with docker-compose
 ```
 git clone https://github.com/WhateverItWorks/my-uptime-kuma-docker-compose.git status
 cd status
@@ -66,12 +73,40 @@ docker-compose up -d
 Uptime Kuma is now running on http://localhost:3001
 
 
+Run Uptime Kuma in developer with docker-compose
+```
+git clone https://github.com/WhateverItWorks/my-uptime-kuma-docker-compose.git status
+cd status
+nano docker-compose.yml
+docker-compose up -d --build
+```
+Uptime Kuma is now running on http://localhost:3001
+
+
 ## How to Update
 ```
 docker-compose down
 docker-compose pull
 docker-compose up -d
 ```
+
+
+## Security Audits:
+
+- [Internet.nl](https://internet.nl/site/status.whateveritworks.org)
+- [HSTS Preload](https://hstspreload.org/)
+- [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=status.whateveritworks.org)
+- [Security Headers](https://securityheaders.com/?q=status.whateveritworks.org&hide=on&followRedirects=on)
+- [pagespeed](https://pagespeed.web.dev/)
+- [webbkoll](https://webbkoll.dataskydd.net/en)
+- [ImmuniWeb](https://www.immuniweb.com/ssl/status.whateveritworks.org)
+- [Hardenize](https://www.hardenize.com/report/status.whateveritworks.org)
+- [Mozilla.org](https://observatory.mozilla.org/)
+- [report-uri.com](https://report-uri.com/home/tools)
+- [check-your-website.server-daten.de](https://check-your-website.server-daten.de/?q=status.whateveritworks.org)
+- [csp-evaluator.withgoogle.com](https://csp-evaluator.withgoogle.com/)
+- [OpenWPM](https://github.com/openwpm/OpenWPM)
+- [privacyscore.org](https://privacyscore.org/)
 
 ## 🗣️ Discussion / Ask for Help
 
